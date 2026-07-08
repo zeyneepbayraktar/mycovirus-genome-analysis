@@ -2,10 +2,9 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 from Bio import Entrez, SeqIO
 
-# NCBI'ya kim olduğunu bildiriyorsun (zorunlu)
-Entrez.email = "zeynepbayraktar2006@gmail.com"  # kendi emailini yaz
+Entrez.email = "your@email.com"
 
-# Ergin Şahin'in bir mycovirus sequence'ini çek
+#  bir mycovirus sequence'i çek
 accession = "PP389084.1"
 
 handle = Entrez.efetch(db="nucleotide", id=accession, rettype="gb", retmode="text")

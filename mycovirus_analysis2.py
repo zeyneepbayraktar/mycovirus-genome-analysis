@@ -3,7 +3,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 from Bio import Entrez, SeqIO
 from Bio.Align import PairwiseAligner
 
-Entrez.email = "zeynepbayraktar2006@gmail.com" 
+Entrez.email = "your@email.com"
 
 accession = "PP389084.1"
 

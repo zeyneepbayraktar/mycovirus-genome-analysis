@@ -2,7 +2,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 from Bio import Entrez, SeqIO
 
-Entrez.email = "zeynepbayraktar2006@gmail.com"
+Entrez.email = "your@email.com"
 
 handle = Entrez.efetch(db="protein", id="WWL46803.1", rettype="gb", retmode="text")
 record = SeqIO.read(handle, "genbank")
